@@ -1,0 +1,36 @@
+#app, .wrapApp, .wrapApp > .container
+	height: 100%
+
+.wrapApp > .container
+	display: flex
+	flex-direction: column
+
+.wrapBackground
+	padding: 22px 15px
+	background: #f9f9f9
+	border-radius: 5px
+	display: flex
+	flex-direction: column
+	flex: 1 0 auto
+
+.wrapper
+	display: flex
+	flex-direction: column
+	flex-grow: 1
+
+.spaContent
+	margin-top: 30px
+	padding: 47px 30px
+	border-radius: 4px
+	background: white
+
+@media screen and (max-width: 768px)
+	.wrapBackground
+		padding: 15px 15px
+	.spaContent
+		margin-top: 15px
+		padding: 30px
+
+@media screen and (max-width: 600px)
+	.spaContent
+		padding: 15px !important

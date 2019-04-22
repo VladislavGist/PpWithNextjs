@@ -1,0 +1,147 @@
+@import ../../../styles/vars
+@import ../../../styles/theme
+
+.button2.mobileBtnPersonalArea
+	padding: 11px 18px
+	font-size: 15px
+
+.loginFormErrMess
+	text-align: center
+	margin-top: 15px
+
+header
+	margin: 15px 0
+	flex: 0 0 auto !important
+	.menuHeader
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 25px 30px
+		box-shadow: 0 1px 4px rgba(0,0,0,.48)
+		border-radius: 5px
+		.top_logo
+			display: flex
+			align-items: center
+			.h1
+				font-size: 15px
+				line-height: 18px
+				color: #7c7c7c
+				text-transform: none
+				max-width: 240px
+				font-family: 'RobotoRegular'
+				margin-left: 18px
+		.userBtns
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex: 0.8
+			a
+				margin-right: 1em
+			a:last-child
+				margin-right: 0
+			& > div
+				margin-right: 1em
+			& > div:last-child
+				margin-right: 0
+			.userName
+				font-family: 'RobotoBold'
+				font-size: 16px
+				color: $colorLead
+				line-height: 18px
+				margin-right: 27px
+			.personalArea
+				font-family: 'RobotoLight'
+				font-size: 16px
+				text-decoration: underline
+				color: $colorLead
+				&:hover
+					color: #ff9800
+					text-decoration: none
+				
+@media screen and (max-width: 1200px)
+	header
+		.menuHeader
+			.top_logo a
+				display: none
+			.userBtns
+				flex: initial
+
+@media screen and (max-width: 992px)
+	header
+		.menuHeader
+			.top_logo a
+				display: block
+				
+			.regionsBtnMobile
+				display: block
+				a
+					padding: 0
+					border: none
+					border-radius: 0
+					display: block
+					&:hover
+						box-shadow: none
+						text-shadow: none
+			.accountBtnMobile
+				display: block
+				width: 100%
+				text-decoration: none !important
+				&:hover
+					box-shadow: none
+					text-shadow: none
+					color: $colorLead !important
+			.mobileRepost
+				display: block
+				width: 100%
+				text-decoration: none
+				color: $colorLead
+			.userBtns
+				flex-direction: column
+				align-items: flex-start
+
+	.mobileBtnPersonalArea
+		display: block !important
+		border-radius: 0
+		color: $colorLead
+		background: transparent
+		box-shadow: none !important
+		width: 100%
+		padding: 15px 0
+		&:hover
+			box-shadow: none !important
+			color: $colorLead
+	.mobilePersonal
+		display: block !important
+		a
+			border: none
+			text-shadow: none !important
+	.mobileSign
+		display: block !important
+		a
+			padding: 0
+			border: none
+
+@media screen and (max-width: 768px)
+	header
+		.menuHeader
+			padding: 12px 18px
+			.top_logo
+				.h1
+					margin-left: 45px
+					text-align: center
+					font-size: 15px
+					line-height: 16px
+
+@media screen and (max-width: 600px)
+	header
+		.menuHeader
+			.top_logo
+				.h1
+					margin: 0 15px
+
+@media screen and (max-width: 480px)
+	header
+		.menuHeader
+			.top_logo
+				.h1
+					display: none

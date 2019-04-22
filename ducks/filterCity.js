@@ -1,3 +1,4 @@
+import fetch from 'isomorphic-unfetch'
 import { actions as actionsSnackbarReducer } from './snackbarReducer'
 import config from '../config'
 

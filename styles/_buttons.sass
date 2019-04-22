@@ -1,0 +1,124 @@
+@import theme
+
+.button1
+	border-radius: 5px
+	color: $colorLead
+	font-family: 'RobotoRegular'
+	font-size: 16px
+	border: 1px solid $colorLead
+	padding: 7px 29px
+	text-decoration: none
+	display: inline-block
+	@extend .transition
+	&:hover
+		color: $colorLead
+		box-shadow: 0 5px 13px rgba(0,0,0,.21), inset 0 2px 14px rgba(0,0,0,.10)
+		
+		text-shadow: 0 5px 13px rgba(0,0,0,.6)
+
+.button2
+	border-radius: 5px
+	color: white
+	background: $colorLead
+	font-family: 'RobotoRegular'
+	font-size: 16px
+	line-height: 18px
+	padding: 11px 29px
+	text-decoration: none
+	@extend .shadowMaterial1
+	@extend .transition
+	&:hover
+		color: white
+
+.button3
+	position: relative
+	&:hover
+		span 
+			display: flex
+			right: 100%
+			width: 130px
+			a:nth-of-type(2)
+				right: 45%
+
+	.buttonCircle
+		display: flex
+		justify-content: center
+		width: 52px
+		height: 52px
+		background: $colorLead
+		border-radius: 50%
+		font-size: 25px
+		color: white
+		position: relative
+		z-index: 3
+		text-decoration: none
+		i
+			align-self: center
+		@extend .shadowMaterial1
+		@extend .transition
+		&:hover
+			color: white
+			
+	span
+		position: absolute
+		display: flex
+		justify-content: flex-end
+		height: 100%
+		right: -20%
+		top: 10%
+		@extend .transition
+		a
+			display: flex
+			justify-content: center
+			width: 43px
+			height: 43px
+			background: $colorLead
+			border-radius: 50%
+			font-size: 22px
+			color: white
+			margin-right: 15px
+			text-decoration: none
+			i
+				align-self: center
+			@extend .shadowMaterial1
+			@extend .transition
+			&:hover
+				color: white
+			&:nth-of-type(1)
+				background: #e91e63
+			&:nth-of-type(2)
+				background: #f44336
+				position: absolute
+				right: 0
+
+.button4
+	width: 165px
+	padding: 22px 0
+	font-size: 16px
+	color: white
+	background: $colorLead
+	display: flex
+	justify-content: center
+	flex: 1 1 auto
+	align-items: center
+	text-transform: uppercase
+	font-family: "RobotoBold", sans-serif
+	text-decoration: none
+	@extend .shadowMaterial1
+	@extend .transition
+	&:hover
+		color: white !important
+	i
+		margin-left: 8px
+	&__active
+		background-color: salmon
+		color: white
+	@media screen and (max-width: 992px)
+		width: 146px
+
+	@media screen and (max-width: 768px)
+		width: 122px
+
+	@media screen and (max-width: 480px)
+		width: 50%
+		text-transform: none

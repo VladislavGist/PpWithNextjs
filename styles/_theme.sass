@@ -1,0 +1,27 @@
+@import vars
+
+.transition
+	transition: all .2s ease
+
+.shadowMaterial1
+	box-shadow: 0 1px 4px rgba(0,0,0,.48) !important
+	&:hover
+		box-shadow: 0 5px 21px rgba(0,0,0,.32) !important
+
+.shadowMaterial1Text
+	text-shadow: 0 1px 4px rgba(0,0,0,.28)
+
+.verticalRotate
+	transform: scale(1, -1)
+	padding: 0 !important
+	.reverseFace
+		position: relative
+		z-index: 6
+		transform: scale(1, -1)
+		height: 100%
+		width: 100%
+		background: white
+		bottom: 100%
+
+// .slick-dots, .slick-next, .slick-prev
+// 	z-index: 6

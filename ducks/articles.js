@@ -133,7 +133,6 @@ export const actions = {
 				return Promise.reject(response.json())
 			})
 			.then(articles => {
-				console.log({articles})
 				dispatch(actionsTypes.handleUpdateStateLoading(100))
 				dispatch({
 					type: types.FETCH_ARTICLES_SUCCESS,

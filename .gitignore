@@ -7,4 +7,5 @@ yarn.lock
 public/404.html
 package-lock.json
 .next
+package-lock.json
 ./../.DS_Store
